@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="">Width</label>
+<input type="text" id="width">
+<label>Height</label>
+<input type="text" id="height">
+<button onclick="area()">In ra S</button>
+<h1 id="dienTich"></h1>
+<script>
+    // cach 1
+    // let inputWidth;
+    // let inputHeight;
+    // inputWidth = +prompt("Enter the width ");
+    // inputHeight = +prompt("enter the height ");
+    // let width = parseInt(inputWidth);
+    // let height = parseInt(inputHeight);
+    // let area = width * height ;
+    // document.write("The area is: "+area)
+    // cach 2
+    function area(){
+        let width = +document.getElementById('width').value;
+        let height = +document.getElementById('height').value;
+        let area = width * height ;
+        console.log('area = ',area)
+        document.getElementById('dienTich').innerHTML = 'The area is : ' +area;
+    }
+</script>
+</body>
+</html>
